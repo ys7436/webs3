@@ -1,0 +1,90 @@
+﻿var gfilter = {
+	colorAdjustProcess: function(context, canvasData, type) {
+		for (var x = 0; x < canvasData.width; x++) {
+			for (var y = 0; y < canvasData.height; y++) {
+				var idx = (x + y * canvasData.width) * 4;
+				var r = canvasData.data[idx + 0];
+				var g = canvasData.data[idx + 1];
+				var b = canvasData.data[idx + 2];
+				switch (type) {
+				case 1:
+					canvasData.data[idx] = (r * 0.472) + (g * 0.334) + (b * 0.231);
+					canvasData.data[idx + 1] = (r * 0.349) + (g * 0.686) + (b * 0.168);
+					canvasData.data[idx + 2] = (r * 0.393) + (g * 0.769) + (b * 0.189);
+					break;
+				case 2:
+					canvasData.data[idx] = (r * 0.372) + (g * 0.434) + (b * 0.131);
+					canvasData.data[idx + 1] = (r * 0.449) + (g * 0.586) + (b * 0.168);
+					canvasData.data[idx + 2] = (r * 0.393) + (g * 0.769) + (b * 0.189);
+					break;
+				case 3:
+					canvasData.data[idx] = (r * 0.372) + (g * 0.534) + (b * 0.231);
+					canvasData.data[idx + 1] = (r * 0.349) + (g * 0.686) + (b * 0.268);
+					canvasData.data[idx + 2] = (r * 0.493) + (g * 0.769) + (b * 0.289);
+					break;
+				case 4:
+					canvasData.data[idx] = (r * 0.172) + (g * 0.534) + (b * 0.231);
+					canvasData.data[idx + 1] = (r * 0.349) + (g * 0.686) + (b * 0.168);
+					canvasData.data[idx + 2] = (r * 0.493) + (g * 0.769) + (b * 0.159);
+					break;
+				case 5:
+					canvasData.data[idx] = (r * 0.372) + (g * 0.334) + (b * 0.231);
+					canvasData.data[idx + 1] = (r * 0.249) + (g * 0.586) + (b * 0.268);
+					canvasData.data[idx + 2] = (r * 0.493) + (g * 0.669) + (b * 0.289);
+					break;
+				default:
+				}
+			}
+		}
+	},
+	doFilter: function(canvas, filtername, canshu) {
+		var tempContext = canvas.getContext("2d");
+		var len = canvas.width * canvas.height * 4;
+		var canvasData = tempContext.getImageData(0, 0, canvas.width, canvas.height);
+		switch (filtername) {
+		case 'adjustcolor1':
+			this.colorAdjustProcess(tempContext, canvasData, 1);
+			break;
+		case 'adjustcolor2':
+			this.colorAdjustProcess(tempContext, canvasData, 2);
+			break;
+		case 'adjustcolor3':
+			this.colorAdjustProcess(tempContext, canvasData, 3);
+			break;
+		case 'adjustcolor4':
+			this.colorAdjustProcess(tempContext, canvasData, 4);
+			break;
+		case 'adjustcolor5':
+			this.colorAdjustProcess(tempContext, canvasData, 5);
+			break;
+		default:
+		}
+		tempContext.putImageData(canvasData, 0, 0)
+	},
+};
+
+function adjustColor1(target) {
+	if(target == undefined) {target="target";}
+	var canvas = document.getElementById(target);
+	gfilter.doFilter(canvas, 'adjustcolor1')
+}
+function adjustColor2(target) {
+	if(target == undefined) {target="target";}
+	var canvas = document.getElementById(target);
+	gfilter.doFilter(canvas, 'adjustcolor2')
+}
+function adjustColor3(target) {
+	if(target == undefined) {target="target";}
+	var canvas = document.getElementById(target);
+	gfilter.doFilter(canvas, 'adjustcolor3')
+}
+function adjustColor4(target) {
+	if(target == undefined) {target="target";}
+	var canvas = document.getElementById(target);
+	gfilter.doFilter(canvas, 'adjustcolor4')
+}
+function adjustColor5(target) {
+	if(target == undefined) {target="target";}
+	var canvas = document.getElementById(target);
+	gfilter.doFilter(canvas, 'adjustcolor5')
+}

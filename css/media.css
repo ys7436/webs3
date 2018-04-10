@@ -1,0 +1,129 @@
+﻿@charset "utf-8";
+@media (max-width:640px){
+    html{font-size:86px;}
+    .content{}
+}
+@media (max-width:600px){
+    html{font-size:80px;}
+    .content{}
+    .section2 .upload{margin: -.4rem auto auto auto; position: relative;z-index: 888;}
+}
+@media (max-width:414px){
+    html{ font-size:56px;}
+    .rule-title{margin:auto auto .9rem auto;}
+    .mail{width:66%;height:1.71rem;}
+    .upload{width:2.85rem;margin: .40rem auto auto auto;}
+    .section2 .upload{width:2.85rem;margin:.16rem auto auto auto;}
+    .bg_top{height:8.4rem;width: 96%;overflow: hidden;margin: 0 auto;}
+    .print{width:4.35rem;left:50%;margin-left: -2.435rem;height: auto;}
+    .get img{width: 2.85rem;}
+    .activity{width:80%;}
+    .operation img{width: 2.85rem;}
+}
+@media (max-width:411px){
+    .section2 .upload {
+      /*  margin: -.4rem auto auto auto !important;*/
+        width: 2.85rem;
+        z-index:678;
+    }
+	.change img { margin: .15rem auto auto 1.40rem; }
+	
+}
+@media (max-width:412px){
+    .bg_top{height:8.3rem;width:96%;margin:0 auto;overflow:hidden;}
+    .print{width:4.35rem;left:50%;margin-left: -2.429rem;height: auto;}
+    .upload{margin:.30rem auto auto auto;width: 2.85rem;}
+    .hover p{margin-bottom: 0;}
+    /*第三屏*/
+    .logo{margin:.10rem auto;}
+    .font{width:4.6rem;}
+    .img-box{width:4.6rem;padding:.40rem;}
+    .content input{margin:.10rem auto auto auto;width:4.6rem;}
+    .img-title{bottom:.10rem;}
+    .change{margin:.10rem auto auto auto;}
+    .section2 .upload{margin:.10rem auto auto auto;}
+    .photo-img{
+        padding: .22rem .22rem .22rem .25rem;
+        margin: .33rem auto auto auto;}
+    .hover img{width:.41rem;}
+    .hover{height:.60rem;}
+}
+
+@media (max-width:375px){
+    html{font-size:50px;}
+    .top{padding-bottom: 0.15rem;}
+    .top img:first-child{margin-bottom: 0.25rem}
+    .picture{height: 7rem;    background-size: 100% 100%;}
+    .activity{width:76%;top:42.5%;}
+    .bd{top:44%;}
+    .wrap-box{width: 88%;}
+    .rule-title{margin:auto auto .1rem auto;}
+    .rotate-div{padding: .5rem .3rem 0 0;}
+    .bg_top{height:8.6rem;}
+    /*第三屏*/
+    .logo{
+        margin:.18rem auto;
+    }
+    .img-title{
+      bottom:.10rem;
+    }
+    .font{width: 5rem;}
+    .img-box{width:5rem;}
+    .pan-img{right:0.5rem;}
+    .content input{
+        margin:.10rem auto auto auto;
+        width:5rem;
+    }
+    .change{margin:.15rem auto auto auto;}
+}
+
+@media (max-width:320px){
+    html{
+        /* font-size:50px;*/
+        font-size:44px;
+    }
+}
+@media (max-width:375px) and (max-height: 812px) {
+    .bottm-img{bottom:.30rem;}
+}
+@media (max-height:532px){
+    .font{width: 4.4rem;}
+    .img-box{width: 4.4rem;}
+    .pan-img{right:.3rem;top:3rem;}
+    .content input{width:4.4rem;}
+    .change img{margin:.10rem auto auto 1.8rem;}
+    .top img:first-child{margin-bottom:.15rem;}
+	.top{padding-bottom:.15rem;}
+    .picture .picture-bg{width: 5rem;height: auto;}
+    .picture .picture-img{width:4.23rem;height:auto;right:.63rem;}
+
+  
+}
+    @media screen and (device-height:812px)  {
+    .section2 .upload{margin:.6rem auto auto auto !important;}
+    .bottm-img{bottom:.50rem;}
+    .load{background-repeat: no-repeat;background-image: url("../img/I10loadBG.jpg");background-size: 100% auto;}
+    .mail {width: 66%;height: 2.2rem}
+    .home {background: url(../img/I10loadBG2.jpg) no-repeat top center;background-size: 100% 100%;}
+    img.word {width: 3.61rem;margin-top: 3.19rem;}
+    .click{margin:0.5rem auto;}
+    .activity {width: 90%;top: 48.5%;}
+    .bd {top: 52%;}
+    .picture {margin: 1.1rem auto;}
+    .top img {width: 4.8rem;margin-top: 0.5rem;}
+    .rule-text {margin-top:2rem;}
+    .txt-content p {line-height:1.16;}
+    .bg_top{height:11.3rem;}
+    .print {width:4.6rem; margin-left: -2.595rem;}
+    .keep {margin-top: -4.16rem;}
+    img.picture2{
+        right: -0.3rem;
+    }
+    .logo { margin:.18rem auto 1rem auto;}
+    .font{width:5.16rem;}
+    .img-box{width:5.16rem;padding:.42rem .43rem;}
+    .content input{margin:.30rem auto auto auto;}
+    .change{margin:.30rem auto auto auto;}
+    .img-title{bottom:.14rem;}
+    .pan-img{right:.5rem;}
+}

@@ -1,0 +1,119 @@
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    font-family: '微软雅黑'
+}
+
+img {
+    border: none
+}
+
+a {
+    text-decoration: none;
+    color: #a3a3a3
+}
+
+@font-face {
+    font-family: fzsxslkjw;
+    src: url(fzsxslkjw.ttf)
+}
+
+ul {
+    list-style: none
+}
+
+body {
+    background: #fff
+}
+
+.zoom {
+    height: auto;
+    overflow: hidden;
+    zoom: 1;
+    margin: auto
+}
+
+.boz {
+    box-sizing: border-box
+}
+
+.gt {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.gt2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+.gt3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3
+}
+
+.gt5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5
+}
+
+@keyframes upin {
+    0% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(1.1)
+    }
+}
+
+.index-banner {
+    width: 100%;
+    overflow: hidden
+}
+
+.index-banner .swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.index-banner .swiper-container .swiper-slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.index-banner .swiper-container .swiper-slide img {
+    display: block;
+    transform: scale(1);
+    vertical-align: middle
+}
+
+.index-banner .swiper-container .swiper-slide-on img {
+    animation: upin 6s ease
+}
+
+.index-banner .swiper-container .swiper-button-next1 {
+    display: block;
+    width: 46px;
+    height: 29px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    margin-left: -23px;
+    bottom: 20px;
+    z-index: 999;
+    background: url(../image/down.png);
+    background-size: 100% 100%;
+    cursor: pointer
+}

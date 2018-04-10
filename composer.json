@@ -1,0 +1,22 @@
+{
+    "autoload": {
+	    "files": [
+	         "app/helpers/functions/web.php",
+	         "app/helpers/functions/web_pc.php",
+	         "app/helpers/functions/web_wap.php",
+	         "app/helpers/functions/admin.php",
+	         "core/helpers/all.php",
+	         "core/helpers/helper.php",
+
+	         "vendor/blade-5.4/src/helpers.php"
+	    ],
+	    "classmap": [
+	    ],
+	    "psr-4": {
+	    	"Core\\" : "core/library",
+	    	"Admin\\" : "web_manage/include",
+	    	"App\\" : "app",
+	    	"Xiaoler\\Blade\\" : "vendor/blade-5.4/src"
+	    }
+	}
+}
